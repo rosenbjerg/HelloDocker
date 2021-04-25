@@ -1,0 +1,8 @@
+﻿version: '3'
+
+services:
+  agentd:
+    image: hello-docker:multi-stage
+    restart: on-failure:5
+    environment:
+      - TZ=Europe/Copenhagen
